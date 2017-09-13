@@ -1,0 +1,1 @@
+./node_modules/.bin/babel word.jsx > word.js
