@@ -4,7 +4,7 @@ var ReactDOM = require('react-dom');
 class HelloWorld extends React.Component {
     render(){
         return (
-            <div>Cats and dogs</div>
+            <div>Cats et dogs</div>
     );
     }
 }
