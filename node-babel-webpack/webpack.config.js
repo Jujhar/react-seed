@@ -23,16 +23,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['env','stage-0']
           }
         }
-      }
-    ],
-    loaders: [
+      },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        use: [ 'style-loader', 'css-loader' ]
       }
-    ]
+    ],
   }
 };
