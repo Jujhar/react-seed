@@ -1,2 +1,6 @@
-/node-babel-webpack/node_modules/
-/node-babel-webpack/js/
+/node_modules/
+package-lock.json
+/docs
+/build
+server.js
+/coverage
