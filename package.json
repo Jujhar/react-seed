@@ -5,12 +5,10 @@
   "main": "index.js",
   "buildDir": "./",
   "scripts": {
-    "start": "npm run eslint && cross-env NODE_ENV=development webpack-dev-server --progress",
+    "start": "./node_modules/.bin/eslint . --fix --ext js && cross-env NODE_ENV=development webpack-dev-server --progress",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --config ./jest.config.json --forceExit --detectOpenHandles --env=jsdom",
     "docs": "jsdoc --configure .jsdoc.json --verbose",
-    "eslint": "eslint . --ext js",
-    "f": "./node_modules/.bin/eslint . --fix --ext js"
   },
   "keywords": [
     "reactapp",
